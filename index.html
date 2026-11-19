@@ -5,22 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SoundMusic Studio – Jørgen Messell</title>
 <meta name="description" content="SoundMusic Studio i Søhøjlandet: Jørgen Messell – alle instrumenter, arrangement, produktion, indspilning og mastering. Strøm Band og Dansk Sang.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;600;700&family=Space+Mono&display=swap">
+<meta name="theme-color" content="#0B1A24">
 <style>
-:root{--bg:#121417;--bg2:#1A1D21;--card:#23272C;--line:#2E3237;--ink:#E9E6E1;--ink2:#C9C4BC;--ink3:#A9A49C;--acc:#E8833A}
+:root{--bg:#0B1A24;--bg2:#0F2230;--card:#132A38;--line:#1E3A4A;--ink:#EAF5F2;--ink2:#CFDCDF;--ink3:#9DB3BA;--acc:#3DD6C4}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-a{color:#F0A066}a:hover{color:#FFC08F}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3,.cd .t,.wm{font-family:"Space Grotesk",Inter,sans-serif}
+a{color:#3DD6C4}a:hover{color:#EAF5F2}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 header.wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-top:24px;padding-bottom:24px}
-.logo{font-weight:700;font-size:22px;color:var(--ink);text-decoration:none}.logo span{color:var(--acc)}
+.logo{display:flex;align-items:center;gap:12px;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:24px;line-height:1;color:var(--ink);text-decoration:none}.logo span{font-weight:400;color:var(--acc)}
 nav{display:flex;flex-wrap:wrap;gap:24px;font-size:15px;font-weight:500}nav a{color:var(--ink2);text-decoration:none}
-.hero{padding-top:64px;padding-bottom:80px}
+.hero{max-width:1180px;padding-top:8px;padding-bottom:64px;display:flex;flex-direction:column;gap:36px}
+.shot{border-radius:20px;overflow:hidden;aspect-ratio:1916/821;box-shadow:0 30px 80px rgba(0,0,0,.5)}.shot img{display:block;width:100%;height:100%;object-fit:cover}
+.brand{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+.mark{display:flex;align-items:center;gap:20px;opacity:.85;min-width:0}.mark svg{width:96px;height:96px;flex:none}
+@media(max-width:600px){.mark{gap:14px}.mark svg{width:64px;height:64px}.tag{letter-spacing:.35em}}
+.wm{font-size:clamp(34px,7vw,84px);line-height:1;letter-spacing:-.01em;font-weight:700}.wm span{font-weight:400;color:var(--acc)}
+.tag{display:block;margin-top:10px;font-family:"Space Mono",ui-monospace,monospace;font-size:14px;letter-spacing:.5em;text-transform:uppercase;color:var(--ink3)}
 .kicker{margin:0;font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--acc)}
 h1{margin:16px 0;font-size:clamp(36px,6vw,68px);line-height:1.05;max-width:15ch;font-weight:650}
 .lead{margin:0;max-width:60ch;color:var(--ink2);font-size:19px}
 .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:999px;font-weight:600;text-decoration:none}
-.btn.p{background:var(--acc);color:#121417}.btn.s{border:1px solid #4A4D52;color:var(--ink)}
+.btn.p{background:var(--acc);color:#0B1A24}.btn.s{border:1px solid #2F5566;color:var(--ink)}
 section{padding:72px 0}section.alt{background:var(--bg2)}
 h2{margin:0 0 8px;font-size:40px;line-height:1.1;font-weight:650}
 .intro{margin:0 0 28px;color:var(--ink2);max-width:62ch}
@@ -43,14 +53,18 @@ footer{padding:32px 0;font-size:14px;color:var(--ink3)}
 </style>
 </head>
 <body>
-<header class="wrap"><a class="logo" href="#top">SoundMusic<span> Studio</span></a>
+<header class="wrap"><a class="logo" href="#top" aria-label="SoundMusic forside"><svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#3DD6C4"/><g fill="#0B1A24"><rect x="11.5" y="43" width="5" height="14" rx="2.5"/><rect x="20.5" y="36" width="5" height="28" rx="2.5"/><rect x="29.5" y="27.6" width="5" height="44.8" rx="2.5"/><rect x="38.5" y="34.6" width="5" height="30.8" rx="2.5"/><rect x="47.5" y="22" width="5" height="56" rx="2.5"/><rect x="56.5" y="31.8" width="5" height="36.4" rx="2.5"/><rect x="65.5" y="26.2" width="5" height="47.6" rx="2.5"/><rect x="74.5" y="37.4" width="5" height="25.2" rx="2.5"/><rect x="83.5" y="43" width="5" height="14" rx="2.5"/></g></svg><span style="color:var(--ink);font-weight:700">Sound<span>Music</span></span></a>
 <nav aria-label="Hovedmenu"><a href="#lyd">Lydeksempler</a><a href="#diskografi">Diskografi</a><a href="#kontakt">Kontakt</a></nav></header>
 <main>
 <section id="top" class="wrap hero">
-<p class="kicker">Søhøjlandet · Jørgen Messell</p>
-<h1>Musik spillet, arrangeret og indspillet i ét studie.</h1>
-<p class="lead">Jørgen Messell spiller alle instrumenter og står for arrangement, produktion og indspilning. Studiet har lavet omkring 40 cd’er – fire med Strøm Band og en lang række undervisningsudgivelser for Dansk Sang, hvor mastering også er lavet her.</p>
-<div class="btns"><a class="btn p" href="#lyd">Hør lydeksempler</a><a class="btn s" href="#kontakt">Kontakt</a></div>
+<h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">SoundMusic Studio – Jørgen Messell, Søhøjlandet</h1>
+<div class="shot"><img src="img/studio.jpg" width="1916" height="821" alt="Studiet om aftenen med udsigt over søen og Himmelbjerget, rackudstyr, forstærker og guitarer"></div>
+<div class="brand">
+<div class="mark"><svg width="96" height="96" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#3DD6C4"/><g fill="#0B1A24"><rect x="11.5" y="43" width="5" height="14" rx="2.5"/><rect x="20.5" y="36" width="5" height="28" rx="2.5"/><rect x="29.5" y="27.6" width="5" height="44.8" rx="2.5"/><rect x="38.5" y="34.6" width="5" height="30.8" rx="2.5"/><rect x="47.5" y="22" width="5" height="56" rx="2.5"/><rect x="56.5" y="31.8" width="5" height="36.4" rx="2.5"/><rect x="65.5" y="26.2" width="5" height="47.6" rx="2.5"/><rect x="74.5" y="37.4" width="5" height="25.2" rx="2.5"/><rect x="83.5" y="43" width="5" height="14" rx="2.5"/></g></svg><div><span class="wm">Sound<span>Music</span></span><span class="tag">Lydstudie</span></div></div>
+<div style="flex:1 1 340px;max-width:46ch"><p class="lead" style="margin:0">Ved bordet med udsigt over søen spiller Jørgen Messell alle instrumenter og står for arrangement, produktion, indspilning og mastering.</p>
+<p class="lead" style="margin:12px 0 0;font-size:16px;color:var(--ink3)">Studiet har lavet omkring 40 cd’er – fire med Strøm Band og en lang række undervisningsudgivelser for Dansk Sang, hvor mastering også er lavet her.</p>
+<div class="btns"><a class="btn p" href="#lyd">Hør lydeksempler</a><a class="btn s" href="#kontakt">Kontakt</a></div></div>
+</div>
 </section>
 <section id="lyd" class="alt"><div class="wrap">
 <h2>Lydeksempler</h2>
@@ -75,7 +89,7 @@ footer{padding:32px 0;font-size:14px;color:var(--ink3)}
 <dl><div><dt>E-mail</dt><dd><a href="mailto:messell@protonmail.com">messell@protonmail.com</a></dd></div><div><dt>Telefon</dt><dd><a href="tel:+4529476313">29 47 63 13</a></dd></div><div><dt>Sted</dt><dd>Søhøjlandet</dd></div></dl>
 </div></section>
 </main>
-<footer class="wrap">SoundMusic Studio · Jørgen Messell · soundmusicstudio.dk</footer>
+<footer class="wrap" style="display:flex;align-items:center;gap:12px"><svg width="24" height="24" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#3DD6C4"/><g fill="#0B1A24"><rect x="11.5" y="43" width="5" height="14" rx="2.5"/><rect x="20.5" y="36" width="5" height="28" rx="2.5"/><rect x="29.5" y="27.6" width="5" height="44.8" rx="2.5"/><rect x="38.5" y="34.6" width="5" height="30.8" rx="2.5"/><rect x="47.5" y="22" width="5" height="56" rx="2.5"/><rect x="56.5" y="31.8" width="5" height="36.4" rx="2.5"/><rect x="65.5" y="26.2" width="5" height="47.6" rx="2.5"/><rect x="74.5" y="37.4" width="5" height="25.2" rx="2.5"/><rect x="83.5" y="43" width="5" height="14" rx="2.5"/></g></svg>SoundMusic Studio · Jørgen Messell · soundmusicstudio.dk</footer>
 <script>
 document.querySelectorAll('.yt').forEach(function(b){b.addEventListener('click',function(){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1';f.title=b.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;b.replaceWith(f);f.style.cssText='width:100%;aspect-ratio:16/9;border:0;border-radius:10px';});});
 </script>
